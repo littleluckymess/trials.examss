@@ -1,9 +1,9 @@
 from itertools import permutations
 
-matrix = '567 348 278 27 168 15 134 236'.split()
-graph = 'AB BH HF FD DC CE EA AH FG EG GC'.split()
+matrix = '47 458 67 125 246 35 138 27'.split()
+graph = 'GB BA AH HF FE EG GC BC CD DF'.split()
 
-print(*range(1, 9))
+print(*range(1,9))
 
 for i in permutations('ABCDEFGH'):
     if all(str(i.index(x) + 1) in matrix[i.index(y)] for x, y in graph):
